@@ -1,0 +1,122 @@
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/ads
+
+
+###
+
+POST http://localhost:3000/ads
+Content-Type: application/json
+
+ {
+    
+    "title": "Blackstars",
+    "description": "I' m a blackstar",
+    "owner": "blackstars@gmail.com",
+    "price": 100,
+    "picture": "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+    "location": "Bayonne",
+    "createdAt": "2023-09-05T10:13:14.755Z"
+  }
+
+###
+DELETE http://localhost:3000/ads/4
+
+###
+
+PUT http://localhost:3000/ads/1
+Content-Type: application/json
+
+{
+    "title": "Blackstars",
+    "description": "I' m a blackstar",
+    "owner": "sss textt black of black",
+    "price": 100,
+    "picture": "https://images.lecho.be/view?iid=dc:113129565&context=ONLINE&ratio=16/9&width=640&u=1508242455000",
+    "location": "Bayonne",
+    "createdAt": "2023-09-05T10:13:14.755Z"
+}
+
+###
+
+GET http://localhost:3000/movies
+ 
+
+###
+
+GET http://localhost:3000/movies/count
+
+###
+
+GET http://localhost:3000/movies/totalBudget
+
+###
+
+GET http://localhost:3000/movies?minYear=2002
+
+###
+GET http://localhost:3000/movies?requestedTime=10:00
+###
+GET http://localhost:3000/movies/35
+###
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "Titre": "Blackstars",
+    "Année(s)": 2016,
+    "duration": 120,
+    "Prix": 50,
+    "Horaires": "10:00,21:30"
+}
+
+###
+
+PUT http://localhost:3000/movies/35
+Content-Type: application/json
+
+{
+  "Titre": "Get blackstars",
+  "Année(s)": 2005,
+  "Prix": 50,
+  "Horaires": "10:00,21:30"
+}
+
+###
+
+GET http://localhost:3000/ad
+
+###
+
+GET http://localhost:3000/ad?city=Bordeaux
+
+###
+GET http://localhost:3000/ad?minPrice=3000
+
+### 
+
+GET http://localhost:3000/ad/05
+Content-Type: application/json
+
+{
+    "price": 0 
+}
+
+###
+
+POST http://localhost:3000/ad
+Content-Type: application/json
+
+ {
+    "title": "Blackstars",
+    "description": "I' m a blackstar, is biutiful Villa",
+    "owner": "Blackstars Villa",
+    "price": 999999,
+    "picture": "Blackstars.jpg",
+    "location": "Bayonne",
+    "createdAt": "1996-02-16",
+    "category_id": 6
+  },
